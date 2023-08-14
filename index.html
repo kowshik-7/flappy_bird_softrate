@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FLAPPY BIRD</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./media.css">
 </head>
 <body>
     <div class="container">
@@ -14,60 +15,79 @@
             <div class="wrap">
                 <img class="starImg" src="./images/background.png" alt="background img">
             </div>
-            <div class="navBar">
-                <div class="nav">
-                    <p>HOME</p>
-                    <p>ABOUT</p>
-                    <p>HELP</p>
+            <div class="content1">
+                <div class="navBar">
+                    <div class="nav">
+                        <a href="./index.html">HOME</a>
+                        <a href="https://softrateindia.com/" target="_blank">ABOUT</a>
+                        <a href="https://softrateindia.com/contact-us.html" target="_blank">CONTACT</a>
+                    </div>
+                </div>
+                <div class="banner">
+                    <div class="gameName">
+                        <img src="./images/name.png" alt="Game Name">
+                    </div>
+                    <div class="gameBird">
+                        <img class="logo" id="bannerLogo" src="./images/logo.png" alt="Game Bird">
+                        <!-- <img class="flyingBird" id="flyBird" src="./images/bird 2.png" alt="Game Bird"> -->
+                    </div>
+                    <div class="play">
+                        <a href='https://play.google.com/store/apps/details?id=com.softrate.flappybird&pli=1&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
+                            <img class="playstore" alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/>
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="banner">
-                <div class="gameName">
-                    <img src="./images/name.png" alt="Game Name">
-                </div>
-                <div class="gameBird">
-                    <img class="logo" id="bannerLogo" src="./images/logo.png" alt="Game Bird">
-                    <img class="flyingBird" id="flyBird" src="./images/bird 2.png" alt="Game Bird">
-                </div>
-                <div class="playNow">
-                    <a href="#"><button class="btn1">PLAY NOW</button></a>
-                </div>
-            </div>
+            
         </div>
 
         <!-- section 2 -->
         <div class="section2">
-            <div class="wrap">
-                <img class="starImg" src="./images/background.png" alt="background img">
+            <div class="wrap2">
+                <div class="ground1">
+                    <img src="./images/ground.png" alt=""> 
+                </div>
+                <div class="pillarWrap">
+                    <div class="flyingBird">
+                        <img src="./images/bird 2.png" alt="flying Bird">
+                    </div>
+                    <div class="pillar">
+                        <img class="pillar11" src="./images/pillar2.png" alt="pillar">
+                        <img class="pillar12" src="./images/pillar2.png" alt="pillar">
+                        
+                        <img class="pillar21" src="./images/pillar2.png" alt="pillar">
+                        <img class="pillar22" src="./images/pillar2.png" alt="pillar">
+                        
+                        <img class="pillar31" src="./images/pillar2.png" alt="pillar">
+                        <img class="pillar32" src="./images/pillar2.png" alt="pillar">
+                        
+                        <img class="pillar41" src="./images/pillar2.png" alt="pillar">
+                        <img class="pillar42" src="./images/pillar2.png" alt="pillar">
+                    </div>
+
+                </div>
+                <div class="ground2">
+                    <img src="./images/ground.png" alt=""> 
+                </div>
             </div>
-            <div class="pillarWrap">
-                <img class="pillar11" src="./images/pillar2.png" alt="pillar">
-                <img class="pillar12" src="./images/pillar2.png" alt="pillar">
-
-                <img class="pillar21" src="./images/pillar2.png" alt="pillar">
-                <img class="pillar22" src="./images/pillar2.png" alt="pillar">
-
-                <img class="pillar31" src="./images/pillar2.png" alt="pillar">
-                <img class="pillar32" src="./images/pillar2.png" alt="pillar">
-
-                <img class="pillar41" src="./images/pillar2.png" alt="pillar">
-                <img class="pillar42" src="./images/pillar2.png" alt="pillar">
-
-            </div>
+            
         </div>
 
             <!-- section 3 -->
         <div class="section3">
+            <div class="wrap3">
+                <img class="starImg" src="./images/background.png" alt="background img">
+            </div>
             <div class="sec3Container">
                 <div class="description">
                         <h1>About Game</h1>
                         <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                            Flappy Bird is a simple yet addictive mobile game where players control a small bird by tapping the screen to make it flap its wings and navigate through a series of pipes. The objective is to avoid crashing into the pipes while flying forward, aiming to achieve the highest distance possible. The game's minimalistic graphics and straightforward mechanics contribute to its challenging nature, as players must time their taps accurately to keep the bird airborne. With its easy-to-understand gameplay and competitive appeal, Flappy Bird gained immense popularity upon its release, leading to numerous imitations and discussions about its addictive qualities.
                         </p>
                 </div>
                 <div class="phone">
                     <img src="./images/phone.png"  class="phoneImg">
-                    <video class="clip" src="./images/gamevid.mp4" type="video/mp4" muted></video>
+                    <video class="clip" src="./images/gamevid.mp4" type="video/mp4" autoplay muted></video>
                 </div>
             </div>
         </div>
@@ -75,7 +95,15 @@
         <!-- footer -->
         <div class="footer">
             <div class="foot">
-                <p>@copy write reserve to softrate games</p>
+                <div class="left">
+                    <p>© Copyright 2023 Softrate Games</p>
+                    <a style="text-decoration: none;" href="https://softrate-innovation-hub.netlify.app/">Softrate Innovation Hub</a>
+                </div>
+                <div class="right">
+                    <a href='https://play.google.com/store/apps/details?id=com.softrate.flappybird&pli=1&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
+                        <img class="playstore" alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
@@ -83,8 +111,9 @@
 
 
 
-
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script> 
     <script src="./index.js"></script>
 </body>
 </html>

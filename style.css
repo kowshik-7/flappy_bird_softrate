@@ -32,7 +32,7 @@ body{
 
 .starImg{
     object-fit: cover;
-    position: absolute;
+    /* position: absolute; */
     animation: star 15s linear infinite;
     overflow: hidden;
 }
@@ -59,7 +59,19 @@ body{
 }
 
 .wrap{
+    position: absolute;
+    height: 100%;
+    width: 100%;
     overflow: hidden;
+}
+.wrap img{
+    width: 100%;
+    height: 100%;
+}
+.content1{
+    height: 100%;
+    width: 100%;
+    position: relative;
 }
 
 .navBar{
@@ -69,6 +81,7 @@ body{
 }
 
 .nav{
+    height: 10vh;
     display: flex;
     width: 40%;
     justify-content: space-between;
@@ -77,7 +90,8 @@ body{
     
 }
 
-.nav p{
+.nav a{
+    text-decoration: none;
     letter-spacing: 3px;
     font-weight: 500;
     color: var(--primary-color);
@@ -120,18 +134,18 @@ body{
     height: 200px;
 }
 
-.flyingBird{
+/* .flyingBird{
     height: 200px;
     position: absolute;
     z-index: 5;
-}
+} */
 
-.playNow{
+.play{
     display: flex;
     justify-content: center;
 }
 
-.btn1{
+.btn{
     padding: 10px;
     width: 180px;
     border: 1px solid white;
@@ -144,12 +158,11 @@ body{
     transition: .8s;
 }
 
-.btn1:hover{
+.btn:hover{
     background-color: white;
     color: #2b352c;
     transition: .8s;
 }
-
 
 
 
@@ -160,13 +173,47 @@ body{
     width: 100%;
 }
 
+.wrap2{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+}
+
 
 .pillarWrap{
-    position: relative;
-    top: 10%;
+    position: relative; 
     width: 100%;
-    height: 80vh;
+    height: 80%;
     overflow: hidden;
+}
+
+.ground1{
+    height: 10%;
+    width: 100%;
+}
+.ground1 img{
+    height: 100%;
+    width: 100%;
+}
+
+.ground2{
+    height: 10%;
+    width: 100%;
+}
+
+.ground2 img{
+    height: 100%;
+    width: 100%;
+    transform: rotate(180deg);
+}
+
+
+.pillar{
+    height: 100%;
+    width: 100%;
 }
 
 .pillar11{
@@ -241,6 +288,54 @@ body{
     top: 55%;
 }
 
+.flyingBird{
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* transform: translateY(-60px);
+    transform: translateX(300px); */
+    transform: translate(-100px,200px);
+    /* animation: flyingBird 8s linear infinite; */
+}
+
+.flyingBird img{
+    height: 150px;
+}
+
+@keyframes flyingBird {
+    0%{
+        left: -8%;
+        top: 55%;
+    }
+    20%{
+        left: 3%;
+        top: 55%;
+    }
+    30%{
+        left: 15%;
+        top: 60%;
+    }
+    40%{
+        top: 40%;
+        left: 24%;
+    }
+    60%{
+        top: 33%;
+        left: 49%;
+    }
+    80%{
+        top: 35%;
+        left: 79%;
+    }
+    100%
+    {
+        top: 30%;
+        left: 105%;
+    }
+}
+
 
 /* section 3 */
 
@@ -255,6 +350,7 @@ body{
 }
 
 .sec3Container{
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -318,6 +414,13 @@ body{
     height: 450px;
 }
 
+.wrap3{
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
 
 
 
@@ -326,23 +429,41 @@ body{
 .footer{
     height: 100px;
     width: 100%;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(244, 244, 244);
     display: flex;
+    justify-content: center;
     align-items: center;
+}
+
+.foot{
+    height: 100%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.left a{
+    text-decoration: none;
+    color: black;
+}
+
+.right{
+    height: 100%;
+    width: 50%;
+    display: flex;
     justify-content: center;
 
 }
-.foot{
-    width: 85%;
-    height: 100px;
-    margin-left: auto;
-    margin-right: auto;
-}
 
-.footer p{
-    color: black;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-self: center;
+.playstore{
+    height: 100px;
 }
